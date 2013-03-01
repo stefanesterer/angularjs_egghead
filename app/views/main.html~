@@ -8,15 +8,23 @@
   <h3>Enjoy coding! - Yeoman</h3>
 </div>
 
-<input type="text" ng-model="message" />
+
+
+<input type="text" ng-model="data.message" />
 <h1>{{data.message}} </h1>
 
+
+
+
 <div ng-controller="FirstCtrl">
-   <input type="text" ng-model="message" />
+   <input type="text" ng-model="data.message" />
 <h1>{{data.message}} </h1>
 </div>    
 
+
+
+
 <div ng-controller="SecondCtrl">
-   <input type="text" ng-model="message" />
+   <input type="text" ng-model="data.message" />
 <h1>{{data.message}} </h1>
 </div>  
