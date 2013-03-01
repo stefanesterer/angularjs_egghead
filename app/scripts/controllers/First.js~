@@ -1,0 +1,6 @@
+'use strict';
+
+angular.module('angularjsApp')
+  .controller('FirstCtrl', function ($scope) {
+    $scope.data = {message:"Hello"};
+  });
