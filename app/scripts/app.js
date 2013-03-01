@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularjsApp', [])
+var myApp= angular.module('angularjsApp', [])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -11,3 +11,8 @@ angular.module('angularjsApp', [])
         redirectTo: '/'
       });
   });
+
+myApp.factory('Data', function (){
+  return {message:"Data from the service!"};
+}
+);
