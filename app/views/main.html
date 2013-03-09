@@ -7,3 +7,15 @@
   <p>installed.</p>
   <h3>Enjoy coding! - Yeoman</h3>
 </div>
+
+
+<div ng-controller="AvengersCtrl">
+  <input type="text" ng-model="search.$" />
+  <table>
+    <tr ng-repeat="actor in avengers.cast | filter:search">
+      <td>{{actor.name}}</td>
+      <td>{{actor.character}}</td>
+    </tr>
+  </table>
+
+</div>
