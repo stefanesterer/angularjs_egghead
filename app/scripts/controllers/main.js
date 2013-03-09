@@ -14,9 +14,9 @@ myApp.factory('Data', function(){
 }
 );  
 
-myApp.filter('reverse', function(Data){
+myApp.filter('reverse', function(){
   return function(text){
-      return text.split("").reverse().join("") + Data.message;
+      return text.split("").reverse().join("");
   }
 }
 );
