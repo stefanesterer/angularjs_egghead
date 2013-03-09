@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularjsApp')
+var myApp = angular.module('angularjsApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
@@ -8,3 +8,15 @@ angular.module('angularjsApp')
       'Testacular'
     ];
   });
+  
+myApp.factory('Data', function(){
+    return {message:"I'm data from a service"};
+}
+);  
+
+myApp.filter('reverse', function(Data){
+  return function(text){
+      return text.split("").reverse().join("") + Data.message;
+  }
+}
+);
