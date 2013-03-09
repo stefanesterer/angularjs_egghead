@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('angularjsApp')
-  .directive('superman', function () {
+  .directive('flash', function () {
     return {
       restrict: 'A',
       link: function(){
-	alert("I'm working stronger")
+	alert("I'm working faster")
       }
     };
   });
