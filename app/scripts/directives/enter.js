@@ -2,9 +2,9 @@
 
 angular.module('angularjsApp')
   .directive('enter', function () {
-    return function (scope, element){
+    return function (scope, element, attrs){
       element.bind("mouseenter", function(){
-	console.log("I'm here")
+	element.addClass(attrs.enter);
       })
     }
       
