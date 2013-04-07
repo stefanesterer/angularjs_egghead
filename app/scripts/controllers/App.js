@@ -16,8 +16,8 @@ angular.module('angularjsApp')
   angular.module('angularjsApp').directive("drink", function(){
     return {
       scope:{
-	flavor:"@"
+	flavor:"="
       },
-      template:'<div>{{flavor}}</div>'
+      template:'<input type="text" ng-model="flavor" />'
     }
   })
